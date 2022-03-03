@@ -1,0 +1,120 @@
+{
+  "wood": [
+    {
+      "buildingPiece": "TC"
+    },
+    {
+      "buildingPiece": "Square Foundation"
+    },
+    {
+      "buildingPiece": "Triangle Foundation"
+    },
+    {
+      "buildingPiece": "Wall"
+    },
+    {
+      "buildingPiece": "Half Wall"
+    },
+    {
+      "buildingPiece": "Low Wall"
+    },
+    {
+      "buildingPiece": "Roof"
+    },
+    {
+      "buildingPiece": "Roof Triangle"
+    }
+  ],
+  "stone": [
+    {
+      "buildingPiece": "Square Foundation"
+    },
+    {
+      "buildingPiece": "Triangle Foundation"
+    },
+    {
+      "buildingPiece": "Wall"
+    },
+    {
+      "buildingPiece": "Half Wall"
+    },
+    {
+      "buildingPiece": "Low Wall"
+    },
+    {
+      "buildingPiece": "Roof"
+    },
+    {
+      "buildingPiece": "Roof Triangle"
+    }
+  ],
+  "Metal": [
+    {
+      "buildingPiece": "Square Foundation"
+    },
+    {
+      "buildingPiece": "Triangle Foundation"
+    },
+    {
+      "buildingPiece": "Wall"
+    },
+    {
+      "buildingPiece": "Half Wall"
+    },
+    {
+      "buildingPiece": "Low Wall"
+    },
+    {
+      "buildingPiece": "Roof"
+    },
+    {
+      "buildingPiece": "Roof Triangle"
+    }
+  ],
+  "HQM": [
+    {
+      "buildingPiece": "Square Foundation"
+    },
+    {
+      "buildingPiece": "Triangle Foundation"
+    },
+    {
+      "buildingPiece": "Wall"
+    },
+    {
+      "buildingPiece": "Half Wall"
+    },
+    {
+      "buildingPiece": "Low Wall"
+    },
+    {
+      "buildingPiece": "Roof"
+    },
+    {
+      "buildingPiece": "Roof Triangle"
+    }
+  ],
+  "deployables": [
+    {
+      "buildingPiece": "Locker"
+    },
+    {
+      "buildingPiece": "Tier 1 Workbench"
+    },
+    {
+      "buildingPiece": "Tier 2 Workbench"
+    },
+    {
+      "buildingPiece": "Tier 3 Workbench"
+    },
+    {
+      "buildingPiece": "Low Wall"
+    },
+    {
+      "buildingPiece": "Roof"
+    },
+    {
+      "buildingPiece": "Roof Triangle"
+    }
+  ]
+}

@@ -1,120 +1,509 @@
 {
-  "wood": [
-    {
-      "buildingPiece": "TC"
+  "entities": {
+    "tool_cupboard": {
+      "raid_cost": {
+        "rocket": 1,
+        "c4": 1,
+        "explosive_ammo": 1,
+        "satchel_charge": 1,
+        "beancan": 1,
+        "grenade": 1,
+        "flamethrower": 20
+      }
     },
-    {
-      "buildingPiece": "Square Foundation"
-    },
-    {
-      "buildingPiece": "Triangle Foundation"
-    },
-    {
-      "buildingPiece": "Wall"
-    },
-    {
-      "buildingPiece": "Half Wall"
-    },
-    {
-      "buildingPiece": "Low Wall"
-    },
-    {
-      "buildingPiece": "Roof"
-    },
-    {
-      "buildingPiece": "Roof Triangle"
+    "locker": {
+      "raid_cost": {
+        "rockets": 1,
+        "c4": 1
+      }
     }
-  ],
-  "stone": [
-    {
-      "buildingPiece": "Square Foundation"
+  },
+  "buildings": {
+    "triangle_foundation": {
+      "wood": {
+        "raid_cost": {
+          "rocket": 1,
+          "hv_rocket": 1,
+          "c4": 1,
+          "explosive_ammo": 1,
+          "satchel_charge": 1,
+          "beancan": 1,
+          "grenade": 1,
+          "mlrs_rocket": 1,
+          "40mm_he_grenade": 1
+        }
+      },
+      "stone": {
+        "raid_cost": {
+          "rocket": 4,
+          "hv_rocket": 32,
+          "c4": 2,
+          "explosive_ammo": 185,
+          "satchel_charge": 10,
+          "beancan": 46,
+          "grenade": 182,
+          "mlrs_rocket": 3,
+          "40mm_he_grenade": 29
+        }
+      },
+      "metal": {
+        "raid_cost": {
+          "rocket": 1,
+          "hv_rocket": 1,
+          "c4": 1,
+          "explosive_ammo": 1,
+          "satchel_charge": 1,
+          "beancan": 1,
+          "grenade": 1,
+          "mlrs_rocket": 1,
+          "40mm_he_grenade": 1
+        }
+      },
+      "hqm": {
+        "raid_cost": {
+          "rocket": 1,
+          "hv_rocket": 1,
+          "c4": 1,
+          "explosive_ammo": 1,
+          "satchel_charge": 1,
+          "beancan": 1,
+          "grenade": 1,
+          "mlrs_rocket": 1,
+          "40mm_he_grenade": 1
+        }
+      }
     },
-    {
-      "buildingPiece": "Triangle Foundation"
+    "square_foundation": {
+      "wood": {
+        "raid_cost": {
+          "rocket": 1,
+          "hv_rocket": 1,
+          "c4": 1,
+          "explosive_ammo": 1,
+          "satchel_charge": 1,
+          "beancan": 1,
+          "grenade": 1,
+          "mlrs_rocket": 1,
+          "40mm_he_grenade": 1
+        }
+      },
+      "stone": {
+        "raid_cost": {
+          "rocket": 4,
+          "hv_rocket": 32,
+          "c4": 2,
+          "explosive_ammo": 185,
+          "satchel_charge": 10,
+          "beancan": 46,
+          "grenade": 182,
+          "mlrs_rocket": 3,
+          "40mm_he_grenade": 29
+        }
+      },
+      "metal": {
+        "raid_cost": {
+          "rocket": 1,
+          "hv_rocket": 1,
+          "c4": 1,
+          "explosive_ammo": 1,
+          "satchel_charge": 1,
+          "beancan": 1,
+          "grenade": 1,
+          "mlrs_rocket": 1,
+          "40mm_he_grenade": 1
+        }
+      },
+      "hqm": {
+        "raid_cost": {
+          "rocket": 1,
+          "hv_rocket": 1,
+          "c4": 1,
+          "explosive_ammo": 1,
+          "satchel_charge": 1,
+          "beancan": 1,
+          "grenade": 1,
+          "mlrs_rocket": 1,
+          "40mm_he_grenade": 1
+        }
+      }
     },
-    {
-      "buildingPiece": "Wall"
+    "wall": {
+      "wood": {
+        "raid_cost": {
+          "rocket": 1,
+          "hv_rocket": 1,
+          "c4": 1,
+          "explosive_ammo": 1,
+          "satchel_charge": 1,
+          "beancan": 1,
+          "grenade": 1,
+          "mlrs_rocket": 1,
+          "40mm_he_grenade": 1
+        }
+      },
+      "stone": {
+        "raid_cost": {
+          "rocket": 4,
+          "hv_rocket": 32,
+          "c4": 2,
+          "explosive_ammo": 185,
+          "satchel_charge": 10,
+          "beancan": 46,
+          "grenade": 182,
+          "mlrs_rocket": 3,
+          "40mm_he_grenade": 29
+        }
+      },
+      "metal": {
+        "raid_cost": {
+          "rocket": 1,
+          "hv_rocket": 1,
+          "c4": 1,
+          "explosive_ammo": 1,
+          "satchel_charge": 1,
+          "beancan": 1,
+          "grenade": 1,
+          "mlrs_rocket": 1,
+          "40mm_he_grenade": 1
+        }
+      },
+      "hqm": {
+        "raid_cost": {
+          "rocket": 1,
+          "hv_rocket": 1,
+          "c4": 1,
+          "explosive_ammo": 1,
+          "satchel_charge": 1,
+          "beancan": 1,
+          "grenade": 1,
+          "mlrs_rocket": 1,
+          "40mm_he_grenade": 1
+        }
+      }
     },
-    {
-      "buildingPiece": "Half Wall"
+    "half_wall": {
+      "wood": {
+        "raid_cost": {
+          "rocket": 1,
+          "hv_rocket": 1,
+          "c4": 1,
+          "explosive_ammo": 1,
+          "satchel_charge": 1,
+          "beancan": 1,
+          "grenade": 1,
+          "mlrs_rocket": 1,
+          "40mm_he_grenade": 1
+        }
+      },
+      "stone": {
+        "raid_cost": {
+          "rocket": 4,
+          "hv_rocket": 32,
+          "c4": 2,
+          "explosive_ammo": 185,
+          "satchel_charge": 10,
+          "beancan": 46,
+          "grenade": 182,
+          "mlrs_rocket": 3,
+          "40mm_he_grenade": 29
+        }
+      },
+      "metal": {
+        "raid_cost": {
+          "rocket": 1,
+          "hv_rocket": 1,
+          "c4": 1,
+          "explosive_ammo": 1,
+          "satchel_charge": 1,
+          "beancan": 1,
+          "grenade": 1,
+          "mlrs_rocket": 1,
+          "40mm_he_grenade": 1
+        }
+      },
+      "hqm": {
+        "raid_cost": {
+          "rocket": 1,
+          "hv_rocket": 1,
+          "c4": 1,
+          "explosive_ammo": 1,
+          "satchel_charge": 1,
+          "beancan": 1,
+          "grenade": 1,
+          "mlrs_rocket": 1,
+          "40mm_he_grenade": 1
+        }
+      }
     },
-    {
-      "buildingPiece": "Low Wall"
+    "low_wall": {
+      "wood": {
+        "raid_cost": {
+          "rocket": 1,
+          "hv_rocket": 1,
+          "c4": 1,
+          "explosive_ammo": 1,
+          "satchel_charge": 1,
+          "beancan": 1,
+          "grenade": 1,
+          "mlrs_rocket": 1,
+          "40mm_he_grenade": 1
+        }
+      },
+      "stone": {
+        "raid_cost": {
+          "rocket": 4,
+          "hv_rocket": 32,
+          "c4": 2,
+          "explosive_ammo": 185,
+          "satchel_charge": 10,
+          "beancan": 46,
+          "grenade": 182,
+          "mlrs_rocket": 3,
+          "40mm_he_grenade": 29
+        }
+      },
+      "metal": {
+        "raid_cost": {
+          "rocket": 1,
+          "hv_rocket": 1,
+          "c4": 1,
+          "explosive_ammo": 1,
+          "satchel_charge": 1,
+          "beancan": 1,
+          "grenade": 1,
+          "mlrs_rocket": 1,
+          "40mm_he_grenade": 1
+        }
+      },
+      "hqm": {
+        "raid_cost": {
+          "rocket": 1,
+          "hv_rocket": 1,
+          "c4": 1,
+          "explosive_ammo": 1,
+          "satchel_charge": 1,
+          "beancan": 1,
+          "grenade": 1,
+          "mlrs_rocket": 1,
+          "40mm_he_grenade": 1
+        }
+      }
     },
-    {
-      "buildingPiece": "Roof"
+    "square_roof": {
+      "wood": {
+        "raid_cost": {
+          "rocket": 1,
+          "hv_rocket": 1,
+          "c4": 1,
+          "explosive_ammo": 1,
+          "satchel_charge": 1,
+          "beancan": 1,
+          "grenade": 1,
+          "mlrs_rocket": 1,
+          "40mm_he_grenade": 1
+        }
+      },
+      "stone": {
+        "raid_cost": {
+          "rocket": 4,
+          "hv_rocket": 32,
+          "c4": 2,
+          "explosive_ammo": 185,
+          "satchel_charge": 10,
+          "beancan": 46,
+          "grenade": 182,
+          "mlrs_rocket": 3,
+          "40mm_he_grenade": 29
+        }
+      },
+      "metal": {
+        "raid_cost": {
+          "rocket": 1,
+          "hv_rocket": 1,
+          "c4": 1,
+          "explosive_ammo": 1,
+          "satchel_charge": 1,
+          "beancan": 1,
+          "grenade": 1,
+          "mlrs_rocket": 1,
+          "40mm_he_grenade": 1
+        }
+      },
+      "hqm": {
+        "raid_cost": {
+          "rocket": 1,
+          "hv_rocket": 1,
+          "c4": 1,
+          "explosive_ammo": 1,
+          "satchel_charge": 1,
+          "beancan": 1,
+          "grenade": 1,
+          "mlrs_rocket": 1,
+          "40mm_he_grenade": 1
+        }
+      }
     },
-    {
-      "buildingPiece": "Roof Triangle"
+    "triangle_roof": {
+      "wood": {
+        "raid_cost": {
+          "rocket": 1,
+          "hv_rocket": 1,
+          "c4": 1,
+          "explosive_ammo": 1,
+          "satchel_charge": 1,
+          "beancan": 1,
+          "grenade": 1,
+          "mlrs_rocket": 1,
+          "40mm_he_grenade": 1
+        }
+      },
+      "stone": {
+        "raid_cost": {
+          "rocket": 4,
+          "hv_rocket": 32,
+          "c4": 2,
+          "explosive_ammo": 185,
+          "satchel_charge": 10,
+          "beancan": 46,
+          "grenade": 182,
+          "mlrs_rocket": 3,
+          "40mm_he_grenade": 29
+        }
+      },
+      "metal": {
+        "raid_cost": {
+          "rocket": 1,
+          "hv_rocket": 1,
+          "c4": 1,
+          "explosive_ammo": 1,
+          "satchel_charge": 1,
+          "beancan": 1,
+          "grenade": 1,
+          "mlrs_rocket": 1,
+          "40mm_he_grenade": 1
+        }
+      },
+      "hqm": {
+        "raid_cost": {
+          "rocket": 1,
+          "hv_rocket": 1,
+          "c4": 1,
+          "explosive_ammo": 1,
+          "satchel_charge": 1,
+          "beancan": 1,
+          "grenade": 1,
+          "mlrs_rocket": 1,
+          "40mm_he_grenade": 1
+        }
+      }
+    },
+    "doorway": {
+      "wood": {
+        "raid_cost": {
+          "rocket": 1,
+          "hv_rocket": 1,
+          "c4": 1,
+          "explosive_ammo": 1,
+          "satchel_charge": 1,
+          "beancan": 1,
+          "grenade": 1,
+          "mlrs_rocket": 1,
+          "40mm_he_grenade": 1
+        }
+      },
+      "stone": {
+        "raid_cost": {
+          "rocket": 4,
+          "hv_rocket": 32,
+          "c4": 2,
+          "explosive_ammo": 185,
+          "satchel_charge": 10,
+          "beancan": 46,
+          "grenade": 182,
+          "mlrs_rocket": 3,
+          "40mm_he_grenade": 29
+        }
+      },
+      "metal": {
+        "raid_cost": {
+          "rocket": 1,
+          "hv_rocket": 1,
+          "c4": 1,
+          "explosive_ammo": 1,
+          "satchel_charge": 1,
+          "beancan": 1,
+          "grenade": 1,
+          "mlrs_rocket": 1,
+          "40mm_he_grenade": 1
+        }
+      },
+      "hqm": {
+        "raid_cost": {
+          "rocket": 1,
+          "hv_rocket": 1,
+          "c4": 1,
+          "explosive_ammo": 1,
+          "satchel_charge": 1,
+          "beancan": 1,
+          "grenade": 1,
+          "mlrs_rocket": 1,
+          "40mm_he_grenade": 1
+        }
+      }
+    },
+    "window": {
+      "wood": {
+        "raid_cost": {
+          "rocket": 1,
+          "hv_rocket": 1,
+          "c4": 1,
+          "explosive_ammo": 1,
+          "satchel_charge": 1,
+          "beancan": 1,
+          "grenade": 1,
+          "mlrs_rocket": 1,
+          "40mm_he_grenade": 1
+        }
+      },
+      "stone": {
+        "raid_cost": {
+          "rocket": 4,
+          "hv_rocket": 32,
+          "c4": 2,
+          "explosive_ammo": 185,
+          "satchel_charge": 10,
+          "beancan": 46,
+          "grenade": 182,
+          "mlrs_rocket": 3,
+          "40mm_he_grenade": 29
+        }
+      },
+      "metal": {
+        "raid_cost": {
+          "rocket": 1,
+          "hv_rocket": 1,
+          "c4": 1,
+          "explosive_ammo": 1,
+          "satchel_charge": 1,
+          "beancan": 1,
+          "grenade": 1,
+          "mlrs_rocket": 1,
+          "40mm_he_grenade": 1
+        }
+      },
+      "hqm": {
+        "raid_cost": {
+          "rocket": 1,
+          "hv_rocket": 1,
+          "c4": 1,
+          "explosive_ammo": 1,
+          "satchel_charge": 1,
+          "beancan": 1,
+          "grenade": 1,
+          "mlrs_rocket": 1,
+          "40mm_he_grenade": 1
+        }
+      }
     }
-  ],
-  "Metal": [
-    {
-      "buildingPiece": "Square Foundation"
-    },
-    {
-      "buildingPiece": "Triangle Foundation"
-    },
-    {
-      "buildingPiece": "Wall"
-    },
-    {
-      "buildingPiece": "Half Wall"
-    },
-    {
-      "buildingPiece": "Low Wall"
-    },
-    {
-      "buildingPiece": "Roof"
-    },
-    {
-      "buildingPiece": "Roof Triangle"
-    }
-  ],
-  "HQM": [
-    {
-      "buildingPiece": "Square Foundation"
-    },
-    {
-      "buildingPiece": "Triangle Foundation"
-    },
-    {
-      "buildingPiece": "Wall"
-    },
-    {
-      "buildingPiece": "Half Wall"
-    },
-    {
-      "buildingPiece": "Low Wall"
-    },
-    {
-      "buildingPiece": "Roof"
-    },
-    {
-      "buildingPiece": "Roof Triangle"
-    }
-  ],
-  "deployables": [
-    {
-      "buildingPiece": "Locker"
-    },
-    {
-      "buildingPiece": "Tier 1 Workbench"
-    },
-    {
-      "buildingPiece": "Tier 2 Workbench"
-    },
-    {
-      "buildingPiece": "Tier 3 Workbench"
-    },
-    {
-      "buildingPiece": "Low Wall"
-    },
-    {
-      "buildingPiece": "Roof"
-    },
-    {
-      "buildingPiece": "Roof Triangle"
-    }
-  ]
+  }
 }

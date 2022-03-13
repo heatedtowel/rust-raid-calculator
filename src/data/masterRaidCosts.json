@@ -1,14 +1,36 @@
 {
   "entities": {
     "tool_cupboard": {
-      "raid_cost": {
-        "rocket": 1,
-        "c4": 1,
-        "explosive_ammo": 1,
-        "satchel_charge": 1,
-        "beancan": 1,
-        "grenade": 1,
-        "flamethrower": 20
+      "health": 100,
+      "durability": {
+        "rocket": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "c4": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "explosive_ammo": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "satchel_charge": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "beancan": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "grenade": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "flamethrower": {
+          "soft_side": 1,
+          "hard_side": 1
+        }
       }
     },
     "locker": {

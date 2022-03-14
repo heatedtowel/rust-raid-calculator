@@ -56,12 +56,12 @@
             "hard_side": 91
           },
           "beancan": {
-            "soft_side": 1,
-            "hard_side": 1
-          },
-          "grenade": {
             "soft_side": 19,
             "hard_side": 19
+          },
+          "grenade": {
+            "soft_side": 1,
+            "hard_side": 1
           },
           "flamethrower": {
             "soft_side": 1,

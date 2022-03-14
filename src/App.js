@@ -3,6 +3,7 @@ import Homepage from './components/Homepage/Homepage';
 import Header from './components/Header/Header';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Calculator from './components/Calculator/Calculator';
+import BuildingPieces from './components/Building Pieces/BuildingPieces';
 
 
 function App() {
@@ -17,6 +18,9 @@ function App() {
             </Route>
             <Route exact path="/calculator">
               <Calculator />
+            </Route>
+            <Route exact path="/buildingPieces">
+              <BuildingPieces />
             </Route>
           </Switch>
         </div>

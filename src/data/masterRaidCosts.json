@@ -102,6 +102,74 @@
           }
         }
       }
+    },
+    "Half Wall": {
+      "wood": {
+        "health": 250,
+        "durability": {
+          "rocket": {
+            "soft_side": 247,
+            "hard_side": 247
+          },
+          "c4": {
+            "soft_side": 250,
+            "hard_side": 250
+          },
+          "explosive_ammo": {
+            "soft_side": 6,
+            "hard_side": 5
+          },
+          "satchel_charge": {
+            "soft_side": 91,
+            "hard_side": 91
+          },
+          "beancan": {
+            "soft_side": 19,
+            "hard_side": 19
+          },
+          "grenade": {
+            "soft_side": 1,
+            "hard_side": 1
+          },
+          "flamethrower": {
+            "soft_side": 1,
+            "hard_side": 1
+          }
+        }
+      },
+      "stone": {
+        "health": 250,
+        "durability": {
+          "rocket": {
+            "soft_side": 137,
+            "hard_side": 137
+          },
+          "c4": {
+            "soft_side": 1,
+            "hard_side": 1
+          },
+          "explosive_ammo": {
+            "soft_side": 1,
+            "hard_side": 1
+          },
+          "satchel_charge": {
+            "soft_side": 1,
+            "hard_side": 1
+          },
+          "beancan": {
+            "soft_side": 1,
+            "hard_side": 1
+          },
+          "grenade": {
+            "soft_side": 1,
+            "hard_side": 1
+          },
+          "flamethrower": {
+            "soft_side": 1,
+            "hard_side": 1
+          }
+        }
+      }
     }
   }
 }

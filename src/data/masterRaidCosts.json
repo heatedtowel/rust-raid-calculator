@@ -1,11 +1,148 @@
 {
-  "entities": {
-    "tool_cupboard": {
-      "health": 100,
+  "tool_cupboard": {
+    "description": "Placing and authorising with the cupboard will make it so only you can build in a 50 meter radius of it. If you want your friends to build, they'll need to authorize too. You should protect this.",
+    "health": 100,
+    "durability": {
+      "rocket": {
+        "soft_side": 1,
+        "hard_side": 1
+      },
+      "c4": {
+        "soft_side": 1,
+        "hard_side": 1
+      },
+      "explosive_ammo": {
+        "soft_side": 1,
+        "hard_side": 1
+      },
+      "satchel_charge": {
+        "soft_side": 1,
+        "hard_side": 1
+      },
+      "beancan": {
+        "soft_side": 1,
+        "hard_side": 1
+      },
+      "grenade": {
+        "soft_side": 1,
+        "hard_side": 1
+      },
+      "flamethrower": {
+        "soft_side": 1,
+        "hard_side": 1
+      }
+    }
+  },
+  "Wall": {
+    "wood": {
+      "description": "A basic building block for bases. Effective at putting a simple layer between your possessions and raiders, but vulnerable to fire, shotgun shells, or several hatchets. Should only be used temporarily, or as an extra layer of protection surrounding a sturdier base. Can be upgraded using the building hammer.",
+      "health": 250,
       "durability": {
         "rocket": {
+          "soft_side": 247,
+          "hard_side": 247
+        },
+        "c4": {
+          "soft_side": 250,
+          "hard_side": 250
+        },
+        "explosive_ammo": {
+          "soft_side": 6,
+          "hard_side": 5
+        },
+        "satchel_charge": {
+          "soft_side": 91,
+          "hard_side": 91
+        },
+        "beancan": {
+          "soft_side": 19,
+          "hard_side": 19
+        },
+        "grenade": {
           "soft_side": 1,
           "hard_side": 1
+        },
+        "flamethrower": {
+          "soft_side": 1,
+          "hard_side": 1
+        }
+      }
+    },
+    "stone": {
+      "description": "Essential for any serious base. Due to its cheap cost, this wall is great for larger bases. Although resistant to fire, it can easily be pickaxed on the weak side.",
+      "health": 250,
+      "durability": {
+        "rocket": {
+          "soft_side": 137,
+          "hard_side": 137
+        },
+        "c4": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "explosive_ammo": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "satchel_charge": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "beancan": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "grenade": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "flamethrower": {
+          "soft_side": 1,
+          "hard_side": 1
+        }
+      }
+    },
+    "metal": {
+      "description": "A sturdy building piece, able to take around double the damage as a stone wall, and much less vulnerable to melee.",
+      "health": 250,
+      "durability": {
+        "rocket": {
+          "soft_side": 137,
+          "hard_side": 137
+        },
+        "c4": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "explosive_ammo": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "satchel_charge": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "beancan": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "grenade": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "flamethrower": {
+          "soft_side": 1,
+          "hard_side": 1
+        }
+      }
+    },
+    "armored": {
+      "description": "The Armored Wall is the best type of Defense in any base. Use sparingly due to its expensive cost to make and upkeep, therefore use it to protect your most valuable items.",
+      "health": 250,
+      "durability": {
+        "rocket": {
+          "soft_side": 137,
+          "hard_side": 137
         },
         "c4": {
           "soft_side": 1,
@@ -34,140 +171,70 @@
       }
     }
   },
-  "buildings": {
-    "Wall": {
-      "wood": {
-        "health": 250,
-        "durability": {
-          "rocket": {
-            "soft_side": 247,
-            "hard_side": 247
-          },
-          "c4": {
-            "soft_side": 250,
-            "hard_side": 250
-          },
-          "explosive_ammo": {
-            "soft_side": 6,
-            "hard_side": 5
-          },
-          "satchel_charge": {
-            "soft_side": 91,
-            "hard_side": 91
-          },
-          "beancan": {
-            "soft_side": 19,
-            "hard_side": 19
-          },
-          "grenade": {
-            "soft_side": 1,
-            "hard_side": 1
-          },
-          "flamethrower": {
-            "soft_side": 1,
-            "hard_side": 1
-          }
-        }
-      },
-      "stone": {
-        "health": 250,
-        "durability": {
-          "rocket": {
-            "soft_side": 137,
-            "hard_side": 137
-          },
-          "c4": {
-            "soft_side": 1,
-            "hard_side": 1
-          },
-          "explosive_ammo": {
-            "soft_side": 1,
-            "hard_side": 1
-          },
-          "satchel_charge": {
-            "soft_side": 1,
-            "hard_side": 1
-          },
-          "beancan": {
-            "soft_side": 1,
-            "hard_side": 1
-          },
-          "grenade": {
-            "soft_side": 1,
-            "hard_side": 1
-          },
-          "flamethrower": {
-            "soft_side": 1,
-            "hard_side": 1
-          }
+  "Half Wall": {
+    "wood": {
+      "health": 250,
+      "durability": {
+        "rocket": {
+          "soft_side": 247,
+          "hard_side": 247
+        },
+        "c4": {
+          "soft_side": 250,
+          "hard_side": 250
+        },
+        "explosive_ammo": {
+          "soft_side": 6,
+          "hard_side": 5
+        },
+        "satchel_charge": {
+          "soft_side": 91,
+          "hard_side": 91
+        },
+        "beancan": {
+          "soft_side": 19,
+          "hard_side": 19
+        },
+        "grenade": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "flamethrower": {
+          "soft_side": 1,
+          "hard_side": 1
         }
       }
     },
-    "Half Wall": {
-      "wood": {
-        "health": 250,
-        "durability": {
-          "rocket": {
-            "soft_side": 247,
-            "hard_side": 247
-          },
-          "c4": {
-            "soft_side": 250,
-            "hard_side": 250
-          },
-          "explosive_ammo": {
-            "soft_side": 6,
-            "hard_side": 5
-          },
-          "satchel_charge": {
-            "soft_side": 91,
-            "hard_side": 91
-          },
-          "beancan": {
-            "soft_side": 19,
-            "hard_side": 19
-          },
-          "grenade": {
-            "soft_side": 1,
-            "hard_side": 1
-          },
-          "flamethrower": {
-            "soft_side": 1,
-            "hard_side": 1
-          }
-        }
-      },
-      "stone": {
-        "health": 250,
-        "durability": {
-          "rocket": {
-            "soft_side": 137,
-            "hard_side": 137
-          },
-          "c4": {
-            "soft_side": 1,
-            "hard_side": 1
-          },
-          "explosive_ammo": {
-            "soft_side": 1,
-            "hard_side": 1
-          },
-          "satchel_charge": {
-            "soft_side": 1,
-            "hard_side": 1
-          },
-          "beancan": {
-            "soft_side": 1,
-            "hard_side": 1
-          },
-          "grenade": {
-            "soft_side": 1,
-            "hard_side": 1
-          },
-          "flamethrower": {
-            "soft_side": 1,
-            "hard_side": 1
-          }
+    "stone": {
+      "health": 250,
+      "durability": {
+        "rocket": {
+          "soft_side": 137,
+          "hard_side": 137
+        },
+        "c4": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "explosive_ammo": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "satchel_charge": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "beancan": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "grenade": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "flamethrower": {
+          "soft_side": 1,
+          "hard_side": 1
         }
       }
     }

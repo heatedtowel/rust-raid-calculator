@@ -4,13 +4,18 @@ import RaidCosts from '../../data/masterRaidCosts.json'
 import './buildingPiece.css'
 
 const BuildingPieces = () => {
-  const buildingPieces = Object.keys(RaidCosts.buildings)
+  const buildingPieces = Object.keys(RaidCosts)
 
-  const [buildingMaterial, setBuildingMaterial] = useState('Wood')
-  const [buildingPiece, setBuildingPiece] = useState('Wooden Door')
+  const [buildingMaterial, setBuildingMaterial] = useState('wood')
+  const [buildingPiece, setBuildingPiece] = useState('')
 
+  const materialDescription = () => {
+    const material = buildingMaterial
+    const piece = buildingPiece
 
+    return RaidCosts.piece.material.description
 
+  }
 
   return (
     <div className='building__flex'>
@@ -20,7 +25,7 @@ const BuildingPieces = () => {
             {buildingPiece}
           </div>
           <div className='grid__item'>
-            Essential for any serious base. Due to its cheap cost, this wall is great for larger bases. Although resistant to fire, it can easily be pickaxed on the weak side.
+            {materialDescription()}
           </div>
         </section>
         <section className='building__flex'>

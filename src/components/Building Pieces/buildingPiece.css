@@ -1,15 +1,19 @@
+.building {
+  font-size: 2rem;
+}
+
 .building__flex {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+
   margin: auto;
   width: 60%;
 }
 
 .building__grid {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   justify-items: center;
   gap: 1rem;
   padding: 1rem;

@@ -1,67 +1,60 @@
-import { useState, useEffect } from 'react'
-import { Dropdown } from 'react-bootstrap'
-import RaidCosts from '../../data/masterRaidCosts.json'
+import { useEffect, useState } from 'react';
 import './buildingPiece.css'
+import RaidCosts from '../../data/masterRaidCosts.json'
 
-const BuildingPieces = () => {
-  const buildingPieces = Object.keys(RaidCosts)
 
-  const [buildingMaterial, setBuildingMaterial] = useState('wood');
-  const [buildingPiece, setBuildingPiece] = useState('wall');
-  const [buildingHealth, setBuildingHealth] = useState('');
+const BuildingPieces = ({ buildingPiece, buildingMaterial }) => {
 
-  // useEffect(() => {
-  //   setBuildingHealth(RaidCosts.buildingPiece.buildingMaterial.health)
-  // }, [buildingMaterial, buildingPiece])
+  const [buildingHealth, setBuildingHealth] = useState(0);
 
-  const materialButton = (buildingPiece) => {
-    if (buildingPiece === 'Wall') {
-      return (<Dropdown>
-        <Dropdown.Toggle variant="success" id="dropdown-basic">
-          Building Types
-        </Dropdown.Toggle>
-        <Dropdown.Menu>
-          <Dropdown.Item key={'wood'} onClick={() => setBuildingMaterial('wood')}>Wood</Dropdown.Item>
-          <Dropdown.Item key={'stone'} onClick={() => setBuildingMaterial('stone')}>Stone</Dropdown.Item>
-          <Dropdown.Item key={'metal'} onClick={() => setBuildingMaterial('metal')}>Metal</Dropdown.Item>
-          <Dropdown.Item key={'armored'} onClick={() => setBuildingMaterial('armored')}>Armored</Dropdown.Item>
-        </Dropdown.Menu>
-      </Dropdown>)
-    }
-  };
+  useEffect(() => {
+    setBuildingHealth()
+  }, [buildingPiece, buildingMaterial])
+
+  const determineRemainingHealth = (buildingPiece, buildingMaterial) => {
+    let piece = buildingPiece;
+    let material = buildingMaterial
+
+    setBuildingHealth(RaidCosts.piece.material.health)
+
+  }
+
+  const raidItems = (buildingPiece, buildingMaterial) => {
+
+    const piece = buildingPiece;
+    const material = buildingMaterial;
+
+    return (
+      <>
+        <div className='grid__item'>
+          Raid Items
+        </div>
+
+        <div className='grid__item'>
+          {piece}
+          {material}
+        </div>
+      </>
+    )
+  }
 
   return (
-    <div className='building__flex'>
-      <div className='building__grid'>
-        <section className='building__flex'>
-          <div className='grid__item'>
-            {buildingPiece}
-          </div>
-          <div className='grid__item'>
-            description
-          </div>
-        </section>
-        <section className='building__flex'>
-          <div className='grid__item'>
-            Durability: {buildingHealth}
-          </div>
-          <div className='grid__item'>
-            Essential for any serious base. Due to its cheap cost, this wall is great for larger bases. Although resistant to fire, it can easily be pickaxed on the weak side.
-          </div>
-        </section>
-        <Dropdown>
-          <Dropdown.Toggle variant="success" id="dropdown-basic">
-            Building Types
-          </Dropdown.Toggle>
-          <Dropdown.Menu>
-            {buildingPieces.map((value) => {
-              return <Dropdown.Item key={value} onClick={() => setBuildingPiece(value)}>{value}</Dropdown.Item>
-            })}
-          </Dropdown.Menu>
-        </Dropdown>
-        {materialButton(buildingPiece)}
-      </div>
-    </div >
+    <div className='building__grid'>
+      <section className='building'>
+        <div className='grid__item'>
+          Piece: {buildingPiece}
+        </div>
+        <div className='grid__item'>
+          Material: {buildingMaterial}
+        </div>
+        <div className='grid__item'>
+          Health: {buildingHealth}
+        </div>
+      </section>
+      <section className='building building'>
+        {raidItems(buildingPiece, buildingMaterial)}
+      </section>
+    </div>
   )
 };
 

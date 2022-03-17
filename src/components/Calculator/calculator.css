@@ -1,0 +1,7 @@
+.calculator__flex {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  margin: auto;
+  width: 60%;
+}

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Dropdown } from 'react-bootstrap'
 import RaidCosts from '../../data/masterRaidCosts.json'
 import './buildingPiece.css'
@@ -6,16 +6,29 @@ import './buildingPiece.css'
 const BuildingPieces = () => {
   const buildingPieces = Object.keys(RaidCosts)
 
-  const [buildingMaterial, setBuildingMaterial] = useState('wood')
-  const [buildingPiece, setBuildingPiece] = useState('')
+  const [buildingMaterial, setBuildingMaterial] = useState('wood');
+  const [buildingPiece, setBuildingPiece] = useState('wall');
+  const [buildingHealth, setBuildingHealth] = useState('');
 
-  const materialDescription = () => {
-    const material = buildingMaterial
-    const piece = buildingPiece
+  // useEffect(() => {
+  //   setBuildingHealth(RaidCosts.buildingPiece.buildingMaterial.health)
+  // }, [buildingMaterial, buildingPiece])
 
-    return RaidCosts.piece.material.description
-
-  }
+  const materialButton = (buildingPiece) => {
+    if (buildingPiece === 'Wall') {
+      return (<Dropdown>
+        <Dropdown.Toggle variant="success" id="dropdown-basic">
+          Building Types
+        </Dropdown.Toggle>
+        <Dropdown.Menu>
+          <Dropdown.Item key={'wood'} onClick={() => setBuildingMaterial('wood')}>Wood</Dropdown.Item>
+          <Dropdown.Item key={'stone'} onClick={() => setBuildingMaterial('stone')}>Stone</Dropdown.Item>
+          <Dropdown.Item key={'metal'} onClick={() => setBuildingMaterial('metal')}>Metal</Dropdown.Item>
+          <Dropdown.Item key={'armored'} onClick={() => setBuildingMaterial('armored')}>Armored</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>)
+    }
+  };
 
   return (
     <div className='building__flex'>
@@ -25,12 +38,12 @@ const BuildingPieces = () => {
             {buildingPiece}
           </div>
           <div className='grid__item'>
-            {materialDescription()}
+            description
           </div>
         </section>
         <section className='building__flex'>
           <div className='grid__item'>
-            Building Health
+            Durability: {buildingHealth}
           </div>
           <div className='grid__item'>
             Essential for any serious base. Due to its cheap cost, this wall is great for larger bases. Although resistant to fire, it can easily be pickaxed on the weak side.
@@ -42,13 +55,14 @@ const BuildingPieces = () => {
           </Dropdown.Toggle>
           <Dropdown.Menu>
             {buildingPieces.map((value) => {
-              return <Dropdown.Item onClick={() => setBuildingPiece(value)}>{value}</Dropdown.Item>
+              return <Dropdown.Item key={value} onClick={() => setBuildingPiece(value)}>{value}</Dropdown.Item>
             })}
           </Dropdown.Menu>
         </Dropdown>
+        {materialButton(buildingPiece)}
       </div>
     </div >
   )
-}
+};
 
 export default BuildingPieces

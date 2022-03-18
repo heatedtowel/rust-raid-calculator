@@ -8,7 +8,7 @@ const BuildingPieces = ({ buildingPiece, buildingMaterial }) => {
   const [buildingHealth, setBuildingHealth] = useState(0);
 
   useEffect(() => {
-    setBuildingHealth()
+    setBuildingHealth(RaidCosts[buildingPiece][buildingMaterial].health)
   }, [buildingPiece, buildingMaterial])
 
   const determineRemainingHealth = (buildingPiece, buildingMaterial) => {

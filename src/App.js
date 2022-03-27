@@ -19,9 +19,6 @@ function App() {
             <Route exact path="/calculator">
               <Calculator />
             </Route>
-            <Route exact path="/buildingPieces">
-              <BuildingPieces />
-            </Route>
           </Switch>
         </div>
       </div>

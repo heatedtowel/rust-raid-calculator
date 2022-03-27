@@ -1,4 +1,4 @@
-import { Nav, Navbar, NavDropdown, Container } from 'react-bootstrap'
+import { Nav, Navbar, Container } from 'react-bootstrap'
 import './header.css'
 
 const Header = () => {
@@ -12,19 +12,9 @@ const Header = () => {
             <Nav className="me-auto">
               <Nav.Link href="/calculator">Calculator</Nav.Link>
               <Nav.Link href="#pricing">Craft Duration</Nav.Link>
-              <NavDropdown title="" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="/buildingPieces">Building Pieces</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.2">Something else</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.3">Something else</NavDropdown.Item>
-              </NavDropdown>
             </Nav>
             <Nav>
               <Nav.Link href="#deets">About Us</Nav.Link>
-              <Nav.Link eventKey={2} href="#memes">
-                Fuck Shit
-              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

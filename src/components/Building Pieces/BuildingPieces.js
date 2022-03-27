@@ -11,14 +11,6 @@ const BuildingPieces = ({ buildingPiece, buildingMaterial }) => {
     setBuildingHealth(RaidCosts[buildingPiece][buildingMaterial].health)
   }, [buildingPiece, buildingMaterial])
 
-  const determineRemainingHealth = (buildingPiece, buildingMaterial) => {
-    let piece = buildingPiece;
-    let material = buildingMaterial
-
-    setBuildingHealth(RaidCosts.piece.material.health)
-
-  }
-
   const raidItems = (buildingPiece, buildingMaterial) => {
 
     const piece = buildingPiece;

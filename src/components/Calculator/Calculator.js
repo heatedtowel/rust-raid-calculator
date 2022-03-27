@@ -8,9 +8,9 @@ const Calculator = () => {
 
   const buildingPieces = Object.keys(RaidCosts)
 
-  const [buildingPiece, setBuildingPiece] = useState('')
+  const [buildingPiece, setBuildingPiece] = useState('Wall')
 
-  const [buildingMaterial, setBuildingMaterial] = useState('')
+  const [buildingMaterial, setBuildingMaterial] = useState('Stone')
 
   const materialButton = (buildingPiece) => {
     if ((buildingPiece === 'Wall') || (buildingPiece === 'Half Wall')) {

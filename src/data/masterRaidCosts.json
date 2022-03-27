@@ -69,7 +69,7 @@
       }
     },
     "Stone": {
-      "health": 250,
+      "health": 500,
       "durability": {
         "rocket": {
           "soft_side": 137,
@@ -102,7 +102,7 @@
       }
     },
     "Metal": {
-      "health": 250,
+      "health": 1000,
       "durability": {
         "rocket": {
           "soft_side": 137,
@@ -135,7 +135,7 @@
       }
     },
     "Armored": {
-      "health": 250,
+      "health": 2000,
       "durability": {
         "rocket": {
           "soft_side": 137,
@@ -203,7 +203,73 @@
       }
     },
     "Stone": {
-      "health": 250,
+      "health": 500,
+      "durability": {
+        "rocket": {
+          "soft_side": 137,
+          "hard_side": 137
+        },
+        "c4": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "explosive_ammo": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "satchel_charge": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "beancan": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "grenade": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "flamethrower": {
+          "soft_side": 1,
+          "hard_side": 1
+        }
+      }
+    },
+    "Metal": {
+      "health": 1000,
+      "durability": {
+        "rocket": {
+          "soft_side": 137,
+          "hard_side": 137
+        },
+        "c4": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "explosive_ammo": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "satchel_charge": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "beancan": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "grenade": {
+          "soft_side": 1,
+          "hard_side": 1
+        },
+        "flamethrower": {
+          "soft_side": 1,
+          "hard_side": 1
+        }
+      }
+    },
+    "Armored": {
+      "health": 2000,
       "durability": {
         "rocket": {
           "soft_side": 137,
